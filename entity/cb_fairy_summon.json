@@ -1,0 +1,53 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cb:fairy_summon",
+      "materials": {
+        "default": "allay"
+      },
+      "textures": {
+        "default": "textures/entity/pamobile/cb_fairy_summon"
+      },
+      "geometry": {
+        "default": "geometry.cb_fairy_summon_default"
+      },
+      "spawn_egg": {
+        "base_color": "#FFEDA3",
+        "overlay_color": "#FF09A4"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.holding_trident = query.is_item_name_any('slot.weapon.mainhand', 'minecraft:trident');"
+        ]
+      },
+      "animations": {
+        "idle": "animation.cb_fairy_summon.idle",
+        "fly": "animation.cb_fairy_summon.fly",
+        "hold_item": "animation.cb_fairy_summon.hold_item",
+        "hold_item_fly": "animation.cb_fairy_summon.hold_item_fly",
+        "look_at_target_default": "animation.cb_fairy_summon.look_at_target.default",
+        "dance": "animation.cb_fairy_summon.dance"
+      },
+      "animation_controllers": [
+        {
+          "general": "controller.animation.cb_fairy_summon.general"
+        },
+        {
+          "look_at_target": "controller.animation.cb_fairy_summon.look_at_target"
+        },
+        {
+          "holding": "controller.animation.cb_fairy_summon.holding"
+        },
+        {
+          "dancing": "controller.animation.cb_fairy_summon.dancing"
+        }
+      ],
+      "render_controllers": [
+        "controller.render.allay"
+      ],
+      "enable_attachables": true,
+      "held_item_ignores_lighting": true
+    }
+  }
+}

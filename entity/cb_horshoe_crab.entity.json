@@ -1,0 +1,32 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cb:horshoe_crab",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/pamobile/cb_horshoe_crab"
+      },
+      "geometry": {
+        "default": "geometry.cb_horshoe_crab"
+      },
+      "animations": {
+        "idle": "animation.horshoe_crab.idle",
+        "walk": "animation.horshoe_crab.walk",
+        "swim": "animation.horshoe_crab.swim",
+        "controller.main": "controller.animation.cb_horshoe_crab.main"
+      },
+      "scripts": {
+        "animate": [
+          "controller.main"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "enable_attachables": false
+    }
+  }
+}

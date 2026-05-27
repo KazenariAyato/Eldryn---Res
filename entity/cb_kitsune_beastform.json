@@ -1,0 +1,46 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cb:kitsune_beastform",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "red": "textures/entity/pamobile/cb_kitsune_beastform",
+        "arctic": "textures/entity/pamobile/cb_kitsune_beastform"
+      },
+      "geometry": {
+        "default": "geometry.cb_kitsune_beastform_default"
+      },
+      "animations": {
+        "walk": "animation.cb_kitsune_beastform._1",
+        "look_at_target": "animation.cb_kitsune_beastform.look_at_target",
+        "baby_transform": "animation.cb_kitsune_beastform.baby_transform",
+        "crouch": "animation.cb_kitsune_beastform.crouch",
+        "sleep": "animation.cb_kitsune_beastform.sleep",
+        "setup": "animation.cb_kitsune_beastform._4",
+        "sit": "animation.cb_kitsune_beastform._4",
+        "wiggle": "animation.cb_kitsune_beastform.wiggle",
+        "stuck": "animation.cb_kitsune_beastform.stuck",
+        "pounce": "animation.cb_kitsune_beastform._5",
+        "move": "controller.animation.cb_kitsune_beastform.move"
+      },
+      "scripts": {
+        "animate": [
+          "move",
+          {
+            "baby_transform": "query.is_baby"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.fox"
+      ],
+      "spawn_egg": {
+        "base_color": "#848080",
+        "overlay_color": "#0029FF"
+      }
+    }
+  }
+}

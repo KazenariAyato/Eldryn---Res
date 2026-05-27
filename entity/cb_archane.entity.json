@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cb:archane",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/pamobile/cb_archane"
+      },
+      "geometry": {
+        "default": "geometry.cb_archane_default"
+      },
+      "animations": {
+        "idle": "animation.cb_archane.idle",
+        "walk": "animation.cb_archane.walk",
+        "run": "animation.cb_archane.run",
+        "attack": "animation.cb_archane.attack",
+        "attack2": "animation.cb_archane.attack2",
+        "attack3": "animation.cb_archane.attack3",
+        "controller": "controller.animation.archane"
+      },
+      "scripts": {
+        "animate": [
+          "controller"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.cb_archane"
+      ],
+      "spawn_egg": {
+        "base_color": "#ABABAB",
+        "overlay_color": "#550041"
+      }
+    }
+  }
+}

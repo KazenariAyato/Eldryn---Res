@@ -1,0 +1,50 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cb:yeti",
+      "materials": {
+        "default": "iron_golem"
+      },
+      "textures": {
+        "default": "textures/entity/pamobile/cb_yeti",
+        "cracked_high": "textures/entity/pamobile/cb_yeti",
+        "cracked_med": "textures/entity/pamobile/cb_yeti",
+        "cracked_low": "textures/entity/pamobile/cb_yeti",
+        "cracked_none": "textures/entity/pamobile/cb_yeti"
+      },
+      "geometry": {
+        "default": "geometry.cb_yeti_default"
+      },
+      "animations": {
+        "walk": "animation.cb_yeti.walk",
+        "move": "animation.cb_yeti.move",
+        "walk_to_target": "animation.cb_yeti.walk",
+        "move_to_target": "animation.cb_yeti.walk",
+        "attack": "animation.cb_yeti.attack",
+        "flower": "animation.cb_yeti.attack",
+        "look_at_target": "animation.cb_yeti.idle",
+        "move_controller": "controller.animation.cb_yeti.move",
+        "arm_controller": "controller.animation.cb_yeti.arm_movement"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.modified_tcos0 = Math.clamp(((Math.cos(query.modified_distance_moved * 13.5) * Math.min(query.modified_move_speed, 0.6) / variable.gliding_speed_value) * 25.0), -12.5, 12.5);"
+        ],
+        "animate": [
+          "look_at_target",
+          "move_controller",
+          "arm_controller"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.iron_golem",
+        "controller.render.iron_golem_cracks"
+      ],
+      "spawn_egg": {
+        "base_color": "#39476D",
+        "overlay_color": "#E1F9FF"
+      }
+    }
+  }
+}

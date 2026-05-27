@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cb:staff_of_crimson_flames_bullet",
+      "materials": {
+        "default": "snowball"
+      },
+      "textures": {
+        "default": "textures/entity/pamobile/cb_staff_of_crimson_flames_bullet"
+      },
+      "geometry": {
+        "default": "geometry.cb_staff_of_crimson_flames_bullet"
+      },
+      "scripts": {
+        "animate": [
+          "move"
+        ]
+      },
+      "animations": {
+        "move": "animation.pabullet.move"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

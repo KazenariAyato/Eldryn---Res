@@ -1,1 +1,53 @@
-
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cb:ancient_elf",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "villager"
+      },
+      "textures": {
+        "farmer": "textures/entity/pamobile/cb_ancient_elf",
+        "librarian": "textures/entity/pamobile/cb_ancient_elf",
+        "priest": "textures/entity/pamobile/cb_ancient_elf",
+        "smith": "textures/entity/pamobile/cb_ancient_elf",
+        "butcher": "textures/entity/pamobile/cb_ancient_elf"
+      },
+      "geometry": {
+        "default": "geometry.cb_ancient_elf_default"
+      },
+      "scripts": {
+        "scale": "0.9375"
+      },
+      "animations": {
+        "general": "animation.cb_ancient_elf.idle",
+        "look_at_target": "animation.cb_ancient_elf.idle2",
+        "move": "animation.cb_ancient_elf.walk2",
+        "baby_transform": "animation.cb_ancient_elf.new",
+        "walk": "animation.cb_ancient_elf.walk",
+        "sit": "animation.cb_ancient_elf.sit",
+        "sing": "animation.cb_ancient_elf.dance",
+        "blessing": "animation.cb_ancient_elf.celebrate"
+      },
+      "animation_controllers": [
+        {
+          "general": "controller.animation.villager.general"
+        },
+        {
+          "move": "controller.animation.villager.move"
+        },
+        {
+          "baby": "controller.animation.villager.baby"
+        }
+      ],
+      "render_controllers": [
+        "controller.render.villager"
+      ],
+      "spawn_egg": {
+        "base_color": "#FFFFFF",
+        "overlay_color": "#FF0000"
+      }
+    }
+  }
+}

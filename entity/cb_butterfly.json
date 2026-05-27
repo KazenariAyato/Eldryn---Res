@@ -1,0 +1,64 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cb:butterfly",
+
+      "materials": {
+        "default": "entity_alphatest"
+      },
+
+      "textures": {
+        "butterfly_0": "textures/entity/pamobile/butterfly_0",
+        "butterfly_1": "textures/entity/pamobile/butterfly_1",
+        "butterfly_2": "textures/entity/pamobile/butterfly_2",
+        "butterfly_3": "textures/entity/pamobile/butterfly_3",
+        "butterfly_4": "textures/entity/pamobile/butterfly_4",
+        "butterfly_5": "textures/entity/pamobile/butterfly_5",
+        "butterfly_6": "textures/entity/pamobile/butterfly_6",
+        "butterfly_7": "textures/entity/pamobile/butterfly_7",
+        "butterfly_8": "textures/entity/pamobile/butterfly_8",
+        "butterfly_9": "textures/entity/pamobile/butterfly_9",
+        "butterfly_10": "textures/entity/pamobile/butterfly_10",
+        "butterfly_11": "textures/entity/pamobile/butterfly_11",
+        "butterfly_12": "textures/entity/pamobile/butterfly_12",
+        "butterfly_13": "textures/entity/pamobile/butterfly_13",
+        "butterfly_14": "textures/entity/pamobile/butterfly_14",
+        "butterfly_15": "textures/entity/pamobile/butterfly_15",
+        "butterfly_16": "textures/entity/pamobile/butterfly_16",
+        "butterfly_17": "textures/entity/pamobile/butterfly_17",
+        "butterfly_18": "textures/entity/pamobile/butterfly_18",
+        "butterfly_19": "textures/entity/pamobile/butterfly_19"
+      },
+
+      "geometry": {
+        "default": "geometry.cb_butterfly"
+      },
+
+      "animations": {
+        "fly": "animation.butterfly.fly",
+        "idle": "animation.butterfly.idle"
+      },
+
+      "scripts": {
+        "animate": [
+          {
+            "fly": "query.is_on_ground == 0"
+          },
+          {
+            "idle": "query.is_on_ground == 1"
+          }
+        ]
+      },
+
+      "render_controllers": [
+        "controller.render.cb_butterfly"
+      ],
+
+      "spawn_egg": {
+        "base_color": "#c77dff",
+        "overlay_color": "#ffffff"
+      }
+    }
+  }
+}

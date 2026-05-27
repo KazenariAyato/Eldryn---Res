@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cb:frost_staff_bullet",
+      "materials": {
+        "default": "snowball"
+      },
+      "textures": {
+        "default": "textures/entity/pamobile/cb_frost_staff_bullet"
+      },
+      "geometry": {
+        "default": "geometry.cb_frost_staff_bullet"
+      },
+      "scripts": {
+        "animate": [
+          "move"
+        ]
+      },
+      "animations": {
+        "move": "animation.pabullet.move"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

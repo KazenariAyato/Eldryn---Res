@@ -1,0 +1,40 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cb:adv_guild_guard_two",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/pamobile/cb_adv_guild_guard_two"
+      },
+      "geometry": {
+        "default": "geometry.cb_adv_guild_guard_two"
+      },
+      "scripts": {
+  "pre_animation": [
+    "v.attacking = q.property('cb:is_attacking');"
+  ],
+  "animate": [
+    "main"
+  ]
+},
+      "animations": {
+        "idle":          "animation.elf.idle",
+        "walk":          "animation.elf.walk",
+        "run":           "animation.elf.run",
+        "swim":          "animation.elf.swim",
+        "attack_knight": "animation.elf.attack_knight",
+        "main":          "controller.animation.cb_dark_elf.main"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "spawn_egg": {
+        "base_color": "#FFFFFF",
+        "overlay_color": "#000000"
+      }
+    }
+  }
+}

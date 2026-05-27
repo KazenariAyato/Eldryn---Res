@@ -1,0 +1,42 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cb:kitsune_demihumanform",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "husk"
+      },
+      "textures": {
+        "default": "textures/entity/pamobile/cb_kitsune_demihumanform"
+      },
+      "geometry": {
+        "default": "geometry.cb_kitsune_demihumanform_default"
+      },
+      "animations": {
+        "controller": "controller.animation.cb_kitsune_demihumanform.move",
+        "idle": "animation.cb_kitsune_demihumanform._2",
+        "move": "animation.cb_kitsune_demihumanform.",
+        "attack": "animation.cb_kitsune_demihumanform._3",
+        "swim": "animation.cb_kitsune_demihumanform._1",
+        "look_at": "animation.cb_kitsune_demihumanform.look_at_target.gliding"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+        ],
+        "animate": [
+          "controller"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.husk"
+      ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "base_color": "#AC0F29",
+        "overlay_color": "#CD5C5C"
+      }
+    }
+  }
+}

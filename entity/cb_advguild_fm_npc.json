@@ -1,0 +1,33 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cb:advguild_fm_npc",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/pamobile/cb_advguild_fm_npc"
+      },
+      "geometry": {
+        "default": "geometry.cb_advguild_fm_npc"
+      },
+      "animations": {
+        "idle": "animation.npc.idle",
+        "controller": "controller.animation.cb_npc"
+      },
+      "scripts": {
+        "animate": [
+          "controller"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "spawn_egg": {
+        "base_color": "#116511",
+        "overlay_color": "#FF6F6F"
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cb:pheonix",
+      "materials": {
+        "default": "skeleton"
+      },
+      "textures": {
+        "default": "textures/entity/pamobile/cb_pheonix"
+      },
+      "geometry": {
+        "default": "geometry.cb_pheonix_default"
+      },
+      "spawn_egg": {
+        "base_color": "#FF7A00",
+        "overlay_color": "#FF0909"
+      },
+      "animations": {
+        "fly": "animation.cb_pheonix._1",
+        "scale": "controller.animation.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.fly",
+        "fly_controller": "controller.animation.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.phoenix.general",
+        "look_at_target": "animation.cb_pheonix.",
+        "breath": "animation.cb_pheonix._2",
+        "flame": "controller.animation.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.cb_pheonix.european_dragon.flame"
+      },
+      "scripts": {
+        "animate": [
+          "fly_controller",
+          {
+            "breath": "query.has_target"
+          },
+          "look_at_target",
+          "flame"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.translucence"
+      ]
+    }
+  }
+}

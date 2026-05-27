@@ -1,0 +1,49 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cb:frost_fm_elf",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "villager"
+      },
+      "textures": {
+        "farmer": "textures/entity/pamobile/cb_frost_fm_elf",
+        "librarian": "textures/entity/pamobile/cb_frost_fm_elf",
+        "priest": "textures/entity/pamobile/cb_frost_fm_elf",
+        "smith": "textures/entity/pamobile/cb_frost_fm_elf",
+        "butcher": "textures/entity/pamobile/cb_frost_fm_elf"
+      },
+      "geometry": {
+        "default": "geometry.cb_frost_fm_elf_default"
+      },
+      "scripts": {
+        "scale": "0.9375"
+      },
+      "animations": {
+        "general": "animation.cb_frost_fm_elf.general",
+        "look_at_target": "animation.cb_frost_fm_elf.look_at_target",
+        "move": "animation.cb_frost_fm_elf.move",
+        "baby_transform": "animation.cb_frost_fm_elf.baby_transform"
+      },
+      "animation_controllers": [
+        {
+          "general": "controller.animation.villager.general"
+        },
+        {
+          "move": "controller.animation.villager.move"
+        },
+        {
+          "baby": "controller.animation.villager.baby"
+        }
+      ],
+      "render_controllers": [
+        "controller.render.villager"
+      ],
+      "spawn_egg": {
+        "base_color": "#F600FF",
+        "overlay_color": "#001A4B"
+      }
+    }
+  }
+}

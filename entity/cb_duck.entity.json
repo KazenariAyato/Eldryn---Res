@@ -1,0 +1,37 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cb:duck",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/pamobile/cb_duck"
+      },
+      "geometry": {
+        "default": "geometry.cb_duck"
+      },
+      "animations": {
+  "idle": "animation.cb_duck.idle",
+  "walk": "animation.cb_duck.walk",
+  "run": "animation.cb_duck.run",
+  "swim": "animation.cb_duck.swim",
+  "attack": "animation.cb_duck.attack",
+  "controller.animation.cb_duck.general": "controller.animation.cb_duck.general"
+},
+      "scripts": {
+        "animate": [
+          "controller.animation.cb_duck.general"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.cb_duck"
+      ],
+      "spawn_egg": {
+        "base_color": "#F5C518",
+        "overlay_color": "#5C8A4A"
+      }
+    }
+  }
+}

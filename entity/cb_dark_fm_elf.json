@@ -1,0 +1,43 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cb:dark_fm_elf",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "farmer": "textures/entity/pamobile/cb_dark_fm_elf",
+        "librarian": "textures/entity/pamobile/cb_dark_fm_elf",
+        "priest": "textures/entity/pamobile/cb_dark_fm_elf",
+        "smith": "textures/entity/pamobile/cb_dark_fm_elf",
+        "butcher": "textures/entity/pamobile/cb_dark_fm_elf"
+      },
+      "geometry": {
+        "default": "geometry.cb_dark_elf_fm"
+      },
+      "scripts": {
+        "scale": "0.9375"
+      },
+"animations": {
+  "animation.elf.idle": "animation.elf.idle",
+  "animation.elf.walk": "animation.elf.walk",
+  "animation.elf.run": "animation.elf.run",
+  "animation.elf.swim": "animation.elf.swim"
+},
+      "animation_controllers": [
+  {
+    "main": "controller.animation.cb_dark_elf.main"
+  }
+],
+      "render_controllers": [
+        "controller.render.villager"
+      ],
+      "spawn_egg": {
+        "base_color": "#000000",
+        "overlay_color": "#474747"
+      }
+    }
+  }
+}
