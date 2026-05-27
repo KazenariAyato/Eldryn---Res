@@ -1,0 +1,11 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.cb_red_orb.": {
+      "loop": true
+    },
+    "animation.cb_red_orb._1": {
+      "loop": true
+    }
+  }
+}

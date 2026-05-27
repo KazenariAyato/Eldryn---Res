@@ -1,0 +1,23 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.cb_tentacle_sword.first_person": {
+			"loop": true,
+			"bones": {
+				"bone": {
+					"rotation": [2.89785, 2.02533, 10.10579],
+					"position": [-1, 0, 0]
+				}
+			}
+		},
+		"animation.cb_tentacle_sword.third_person": {
+			"loop": true,
+			"bones": {
+				"bone": {
+					"rotation": [2.89785, 2.02533, 10.10579],
+					"position": [-1, 0, 0]
+				}
+			}
+		}
+	}
+}

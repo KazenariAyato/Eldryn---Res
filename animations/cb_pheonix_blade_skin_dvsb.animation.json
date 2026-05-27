@@ -1,0 +1,43 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.cb_pheonix_blade_skin_dvsb.": {
+      "animation_length": 0.5,
+      "bones": {
+        "bone3": {
+          "position": {
+            "0.0": [
+              0,
+              -396.81,
+              -0.2
+            ],
+            "0.4": [
+              0,
+              0.18512,
+              -0.19553
+            ]
+          }
+        }
+      }
+    },
+    "animation.cb_pheonix_blade_skin_dvsb._1": {
+      "animation_length": 0.5,
+      "bones": {
+        "bone3": {
+          "position": {
+            "0.0": [
+              0,
+              -672.81,
+              -0.2
+            ],
+            "0.4": [
+              0,
+              0.18512,
+              -0.19553
+            ]
+          }
+        }
+      }
+    }
+  }
+}

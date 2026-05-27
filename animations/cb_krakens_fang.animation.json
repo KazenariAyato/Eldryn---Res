@@ -1,0 +1,23 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.cb_krakens_fang.first_person": {
+			"loop": true,
+			"bones": {
+				"rightItem": {
+					"rotation": [42.5, 0, 180],
+					"position": [0, -2, -0.5]
+				}
+			}
+		},
+		"animation.cb_krakens_fang.third_person": {
+			"loop": true,
+			"bones": {
+				"rightItem": {
+					"rotation": [42.5, 0, 180],
+					"position": [0, -2, -0.5]
+				}
+			}
+		}
+	}
+}

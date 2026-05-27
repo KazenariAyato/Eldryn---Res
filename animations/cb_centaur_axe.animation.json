@@ -1,0 +1,39 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.cb_centaur_axe.first_person": {
+      "loop": true,
+      "bones": {
+        "rightItem": {
+          "rotation": [
+            0,
+            0,
+            180
+          ],
+          "position": [
+            -5,
+            35,
+            -5.5
+          ]
+        }
+      }
+    },
+    "animation.cb_centaur_axe.third_person": {
+      "loop": true,
+      "bones": {
+        "rightItem": {
+          "rotation": [
+            90,
+            0,
+            90
+          ],
+          "position": [
+            0,
+            22,
+            5
+          ]
+        }
+      }
+    }
+  }
+}

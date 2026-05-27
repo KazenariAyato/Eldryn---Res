@@ -1,0 +1,11 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.cb_kitsune_claws.": {
+      "loop": true
+    },
+    "animation.cb_kitsune_claws._1": {
+      "loop": true
+    }
+  }
+}

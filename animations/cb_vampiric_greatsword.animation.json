@@ -1,0 +1,25 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.cb_vampiric_greatsword.first_person": {
+			"loop": true
+		},
+		"animation.cb_vampiric_greatsword.third_personn": {
+			"loop": true,
+			"bones": {
+				"rightItem": {
+					"rotation": [
+						50.32849,
+						-4.05198,
+						6.32107
+					],
+					"position": [
+						-8,
+						22.5,
+						0
+					]
+				}
+			}
+		}
+	}
+}

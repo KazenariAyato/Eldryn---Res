@@ -1,0 +1,47 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.cb_pheonix_blade.": {
+      "loop": true,
+      "animation_length": 0.1667,
+      "bones": {
+        "root": {
+          "rotation": {
+            "0.0": [
+              471.45539,
+              -60.32349,
+              -602.8417
+            ],
+            "0.1667": [
+              0,
+              85,
+              0
+            ]
+          },
+          "position": [
+            18,
+            -4,
+            -7
+          ]
+        }
+      }
+    },
+    "animation.cb_pheonix_blade._1": {
+      "loop": true,
+      "bones": {
+        "root": {
+          "rotation": [
+            15,
+            0,
+            0
+          ],
+          "position": [
+            18,
+            12,
+            9
+          ]
+        }
+      }
+    }
+  }
+}

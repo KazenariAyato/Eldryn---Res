@@ -1,0 +1,29 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.cb_frost_viole.": {
+      "loop": true,
+      "bones": {
+        "rightArm": {
+          "rotation": [
+            -22.5,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "animation.cb_frost_viole._1": {
+      "loop": true,
+      "bones": {
+        "rightArm": {
+          "rotation": [
+            -17.5,
+            0,
+            0
+          ]
+        }
+      }
+    }
+  }
+}
