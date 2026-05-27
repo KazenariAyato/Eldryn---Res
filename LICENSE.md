@@ -78,3 +78,10 @@ Unauthorized use, reproduction, or distribution of this Resource Pack or any por
 - stone_0s  
 - iamnot.isaac.  
 - lucky.wab
+
+## Contributions:
+
+Special Thanks To:
+
+* Aoffy_aof { Their Socials: Discord: @Aoffy_Aof Their Gmail: aoif254@gmail.com Their Discord group: https://discord.com/invite/snUrCMBYPF And Finally Their CurseForge profile: https://www.curseforge.com/members/aoffy_aof } [For The Use Of Their Shader In Our Addon]
+
