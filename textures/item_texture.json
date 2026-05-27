@@ -1,0 +1,679 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "egg_camel": {
+      "textures": "textures/items/egg_camel"
+    },
+    "egg_lion": {
+      "textures": "textures/items/egg_lion"
+    },
+    "egg_penguin": {
+      "textures": "textures/items/egg_penguin"
+    },
+    "egg_tiger": {
+      "textures": "textures/items/egg_tiger"
+    },
+    "egg_elephant": {
+      "textures": "textures/items/egg_elephant"
+    },
+    "egg_deer": {
+      "textures": "textures/items/egg_deer"
+    },
+    "egg_panther": {
+      "textures": "textures/items/egg_panther"
+    },
+    "egg_frog": {
+      "textures": "textures/items/egg_frog"
+    },
+    "egg_crocodile": {
+      "textures": "textures/items/egg_crocodile"
+    },
+    "egg_mouse": {
+      "textures": "textures/items/egg_mouse"
+    },
+    "gallardo": {
+      "textures": "textures/items/gallardo"
+    },
+    "bench": {
+      "textures": "textures/items/bench"
+    },
+    "christmas_tree": {
+      "textures": "textures/items/christmas_tree"
+    },
+    "tivi": {
+      "textures": "textures/items/tivi"
+    },
+    "closet": {
+      "textures": "textures/items/closet"
+    },
+    "laptop": {
+      "textures": "textures/items/laptop"
+    },
+    "piano": {
+      "textures": "textures/items/piano"
+    },
+    "armchairs": {
+      "textures": "textures/items/armchairs"
+    },
+    "chair": {
+      "textures": "textures/items/chair"
+    },
+    "big_table": {
+      "textures": "textures/items/big_table"
+    },
+    "small_table": {
+      "textures": "textures/items/small_table"
+    },
+    "drone": {
+      "textures": "textures/items/drone"
+    },
+    "colorful_gifts": {
+      "textures": "textures/items/colorful_gifts"
+    },
+    "cb_summon_spirit_upgrade": {
+      "textures": "textures/items/pamobile/cb_summon_spirit_upgrade"
+    },
+    "cb_tentacle_sword": {
+      "textures": "textures/items/pamobile/cb_tentacle_sword"
+    },
+    "cb_red_orb": {
+      "textures": "textures/items/pamobile/cb_red_orb"
+    },
+    "cb_xp_viole": {
+      "textures": "textures/items/pamobile/cb_xp_viole"
+    },
+    "cb_kraken_scale_helmet": {
+      "textures": [
+        "textures/items/pamobile/cb_kraken_scale_helmet"
+      ]
+    },
+    "cb:kraken_scales": {
+      "textures": "textures/items/pamobile/cb_kraken_scales"
+    },
+    "cb_kraken_scale_chestplate": {
+      "textures": [
+        "textures/items/pamobile/cb_kraken_scale_chestplate"
+      ]
+    },
+    "cb_xp_viole_4": {
+      "textures": "textures/items/pamobile/cb_xp_viole_4"
+    },
+    "cb_xp_viole_5": {
+      "textures": "textures/items/pamobile/cb_xp_viole_5"
+    },
+    "cb_xp_viole_1": {
+      "textures": "textures/items/pamobile/cb_xp_viole_1"
+    },
+    "cb_xp_viole_2": {
+      "textures": "textures/items/pamobile/cb_xp_viole_2"
+    },
+    "cb_xp_viole_3": {
+      "textures": "textures/items/pamobile/cb_xp_viole_3"
+    },
+    "cb:orb_of_absorption_2": {
+      "textures": "textures/items/pamobile/cb_orb_of_absorption_2"
+    },
+    "cb:orb_of_regeneration_3": {
+      "textures": "textures/items/pamobile/cb_orb_of_regeneration_3"
+    },
+    "cb:orb_of_regeneration_2": {
+      "textures": "textures/items/pamobile/cb_orb_of_regeneration_2"
+    },
+    "cb:orb_of_regeneration": {
+      "textures": "textures/items/pamobile/cb_orb_of_regeneration"
+    },
+    "cb:orb_of_absorption_3": {
+      "textures": "textures/items/pamobile/cb_orb_of_absorption_3"
+    },
+    "cb_kraken_scale_leggings": {
+      "textures": [
+        "textures/items/pamobile/cb_kraken_scale_leggings"
+      ]
+    },
+    "cb:orb_of_absorption_1": {
+      "textures": "textures/items/pamobile/cb_orb_of_absorption_1"
+    },
+    "cb_kraken_scales_boots": {
+      "textures": [
+        "textures/items/pamobile/cb_kraken_scales_boots"
+      ]
+    },
+    "cb:orb_of_resistance": {
+      "textures": "textures/items/pamobile/cb_orb_of_resistance"
+    },
+    "cb:orb_of_speed": {
+      "textures": "textures/items/pamobile/cb_orb_of_speed"
+    },
+    "cb:orb_of_resistance_2": {
+      "textures": "textures/items/pamobile/cb_orb_of_resistance_2"
+    },
+    "cb:orb_of_fire_immunity": {
+      "textures": "textures/items/pamobile/cb_orb_of_fire_immunity"
+    },
+    "cb:orb_of_speed_3": {
+      "textures": "textures/items/pamobile/cb_orb_of_speed_3"
+    },
+    "cb:orb_of_speed_2": {
+      "textures": "textures/items/pamobile/cb_orb_of_speed_2"
+    },
+    "cb:orb_of_resistance_3": {
+      "textures": "textures/items/pamobile/cb_orb_of_resistance_3"
+    },
+    "cb_chestplate_of_heavens": {
+      "textures": [
+        "textures/items/pamobile/cb_chestplate_of_heavens"
+      ]
+    },
+    "cb_main_dark_staff": {
+      "textures": "textures/items/pamobile/cb_main_dark_staff"
+    },
+    "cb:yeti_fur": {
+      "textures": "textures/items/pamobile/cb_yeti_fur"
+    },
+    "cb_yeti_fur_helmet": {
+      "textures": [
+        "textures/items/pamobile/cb_yeti_fur_helmet"
+      ]
+    },
+"cb_steel_helmet": {
+      "textures": [
+        "textures/items/pamobile/cb_steel_helmet"
+      ]
+    },
+"cb_steel_chestplate": {
+      "textures": [
+        "textures/items/pamobile/cb_steel_chestplate"
+      ]
+    },
+"cb_steel_leggings": {
+      "textures": [
+        "textures/items/pamobile/cb_steel_leggings"
+      ]
+    },
+"cb_steel_boots": {
+      "textures": [
+        "textures/items/pamobile/cb_steel_boots"
+      ]
+    },
+"cb_adamantium_helmet": {
+  "textures": [
+    "textures/items/pamobile/cb_adamantium_helmet"
+  ]
+},
+"cb_adamantium_chestplate": {
+  "textures": [
+    "textures/items/pamobile/cb_adamantium_chestplate"
+  ]
+},
+"cb_adamantium_leggings": {
+  "textures": [
+    "textures/items/pamobile/cb_adamantium_leggings"
+  ]
+},
+"cb_adamantium_boots": {
+  "textures": [
+    "textures/items/pamobile/cb_adamantium_boots"
+  ]
+},
+
+"cb_labrysium_helmet": {
+  "textures": [
+    "textures/items/pamobile/cb_labrysium_helmet"
+  ]
+},
+"cb_labrysium_chestplate": {
+  "textures": [
+    "textures/items/pamobile/cb_labrysium_chestplate"
+  ]
+},
+"cb_labrysium_leggings": {
+  "textures": [
+    "textures/items/pamobile/cb_labrysium_leggings"
+  ]
+},
+"cb_labrysium_boots": {
+  "textures": [
+    "textures/items/pamobile/cb_labrysium_boots"
+  ]
+},
+
+"cb_silver_helmet": {
+  "textures": [
+    "textures/items/pamobile/cb_silver_helmet"
+  ]
+},
+"cb_silver_chestplate": {
+  "textures": [
+    "textures/items/pamobile/cb_silver_chestplate"
+  ]
+},
+"cb_silver_leggings": {
+  "textures": [
+    "textures/items/pamobile/cb_silver_leggings"
+  ]
+},
+"cb_silver_boots": {
+  "textures": [
+    "textures/items/pamobile/cb_silver_boots"
+  ]
+},
+    "cb_frost_dagger": {
+      "textures": "textures/items/pamobile/cb_frost_dagger"
+    },
+    "cb_wooden_longsword": {
+      "textures": "textures/items/pamobile/cb_wooden_longsword"
+    },
+    "cb_stone_longsword": {
+      "textures": "textures/items/pamobile/cb_stone_longsword"
+    },
+    "cb_iron_longsword": {
+      "textures": "textures/items/pamobile/cb_iron_longsword"
+    },
+    "cb_copper_longsword": {
+      "textures": "textures/items/pamobile/cb_copper_longsword"
+    },
+    "cb_gold_longsword": {
+      "textures": "textures/items/pamobile/cb_gold_longsword"
+    },
+    "cb_diamond_longsword": {
+      "textures": "textures/items/pamobile/cb_diamond_longsword"
+    },
+    "cb_netherite_longsword": {
+      "textures": "textures/items/pamobile/cb_netherite_longsword"
+    },
+    "cb_steel_longsword": {
+      "textures": "textures/items/pamobile/cb_steel_longsword"
+    },
+    "cb_silver_longsword": {
+      "textures": "textures/items/pamobile/cb_silver_longsword"
+    },
+    "cb_labrysium_longsword": {
+      "textures": "textures/items/pamobile/cb_labrysium_longsword"
+    },
+    "cb_adamantium_longsword": {
+      "textures": "textures/items/pamobile/cb_adamantium_longsword"
+    },
+"cb_wooden_greatsword": {
+  "textures": "textures/items/pamobile/cb_wooden_greatsword"
+},
+"cb_stone_greatsword": {
+  "textures": "textures/items/pamobile/cb_stone_greatsword"
+},
+"cb_iron_greatsword": {
+  "textures": "textures/items/pamobile/cb_iron_greatsword"
+},
+"cb_copper_greatsword": {
+  "textures": "textures/items/pamobile/cb_copper_greatsword"
+},
+"cb_gold_greatsword": {
+  "textures": "textures/items/pamobile/cb_gold_greatsword"
+},
+"cb_diamond_greatsword": {
+  "textures": "textures/items/pamobile/cb_diamond_greatsword"
+},
+"cb_netherite_greatsword": {
+  "textures": "textures/items/pamobile/cb_netherite_greatsword"
+},
+"cb_steel_greatsword": {
+  "textures": "textures/items/pamobile/cb_steel_greatsword"
+},
+"cb_silver_greatsword": {
+  "textures": "textures/items/pamobile/cb_silver_greatsword"
+},
+"cb_labrysium_greatsword": {
+  "textures": "textures/items/pamobile/cb_labrysium_greatsword"
+},
+"cb_adamantium_greatsword": {
+  "textures": "textures/items/pamobile/cb_adamantium_greatsword"
+},
+"cb_wooden_rapier": {
+  "textures": "textures/items/pamobile/cb_wooden_rapier"
+},
+"cb_stone_rapier": {
+  "textures": "textures/items/pamobile/cb_stone_rapier"
+},
+"cb_iron_rapier": {
+  "textures": "textures/items/pamobile/cb_iron_rapier"
+},
+"cb_copper_rapier": {
+  "textures": "textures/items/pamobile/cb_copper_rapier"
+},
+"cb_gold_rapier": {
+  "textures": "textures/items/pamobile/cb_gold_rapier"
+},
+"cb_diamond_rapier": {
+  "textures": "textures/items/pamobile/cb_diamond_rapier"
+},
+"cb_netherite_rapier": {
+  "textures": "textures/items/pamobile/cb_netherite_rapier"
+},
+"cb_steel_rapier": {
+  "textures": "textures/items/pamobile/cb_steel_rapier"
+},
+"cb_silver_rapier": {
+  "textures": "textures/items/pamobile/cb_silver_rapier"
+},
+"cb_labrysium_rapier": {
+  "textures": "textures/items/pamobile/cb_labrysium_rapier"
+},
+"cb_adamantium_rapier": {
+  "textures": "textures/items/pamobile/cb_adamantium_rapier"
+},
+"cb_wooden_dagger": {
+  "textures": "textures/items/pamobile/cb_wooden_dagger"
+},
+"cb_stone_dagger": {
+  "textures": "textures/items/pamobile/cb_stone_dagger"
+},
+"cb_iron_dagger": {
+  "textures": "textures/items/pamobile/cb_iron_dagger"
+},
+"cb_copper_dagger": {
+  "textures": "textures/items/pamobile/cb_copper_dagger"
+},
+"cb_gold_dagger": {
+  "textures": "textures/items/pamobile/cb_gold_dagger"
+},
+"cb_diamond_dagger": {
+  "textures": "textures/items/pamobile/cb_diamond_dagger"
+},
+"cb_netherite_dagger": {
+  "textures": "textures/items/pamobile/cb_netherite_dagger"
+},
+"cb_steel_dagger": {
+  "textures": "textures/items/pamobile/cb_steel_dagger"
+},
+"cb_silver_dagger": {
+  "textures": "textures/items/pamobile/cb_silver_dagger"
+},
+"cb_labrysium_dagger": {
+  "textures": "textures/items/pamobile/cb_labrysium_dagger"
+},
+"cb_adamantium_dagger": {
+  "textures": "textures/items/pamobile/cb_adamantium_dagger"
+},
+"cb_wooden_katana": {
+  "textures": "textures/items/pamobile/cb_wooden_katana"
+},
+"cb_stone_katana": {
+  "textures": "textures/items/pamobile/cb_stone_katana"
+},
+"cb_iron_katana": {
+  "textures": "textures/items/pamobile/cb_iron_katana"
+},
+"cb_copper_katana": {
+  "textures": "textures/items/pamobile/cb_copper_katana"
+},
+"cb_gold_katana": {
+  "textures": "textures/items/pamobile/cb_gold_katana"
+},
+"cb_diamond_katana": {
+  "textures": "textures/items/pamobile/cb_diamond_katana"
+},
+"cb_netherite_katana": {
+  "textures": "textures/items/pamobile/cb_netherite_katana"
+},
+"cb_steel_katana": {
+  "textures": "textures/items/pamobile/cb_steel_katana"
+},
+"cb_silver_katana": {
+  "textures": "textures/items/pamobile/cb_silver_katana"
+},
+"cb_labrysium_katana": {
+  "textures": "textures/items/pamobile/cb_labrysium_katana"
+},
+"cb_adamantium_katana": {
+  "textures": "textures/items/pamobile/cb_adamantium_katana"
+},
+"cb_wooden_pike": {
+  "textures": "textures/items/pamobile/cb_wooden_pike"
+},
+"cb_stone_pike": {
+  "textures": "textures/items/pamobile/cb_stone_pike"
+},
+"cb_iron_pike": {
+  "textures": "textures/items/pamobile/cb_iron_pike"
+},
+"cb_copper_pike": {
+  "textures": "textures/items/pamobile/cb_copper_pike"
+},
+"cb_gold_pike": {
+  "textures": "textures/items/pamobile/cb_gold_pike"
+},
+"cb_diamond_pike": {
+  "textures": "textures/items/pamobile/cb_diamond_pike"
+},
+"cb_netherite_pike": {
+  "textures": "textures/items/pamobile/cb_netherite_pike"
+},
+"cb_steel_pike": {
+  "textures": "textures/items/pamobile/cb_steel_pike"
+},
+"cb_silver_pike": {
+  "textures": "textures/items/pamobile/cb_silver_pike"
+},
+"cb_labrysium_pike": {
+  "textures": "textures/items/pamobile/cb_labrysium_pike"
+},
+"cb_adamantium_pike": {
+  "textures": "textures/items/pamobile/cb_adamantium_pike"
+},
+    "cb_frost_viole": {
+      "textures": "textures/items/pamobile/cb_frost_viole"
+    },
+    "cb_yeti_fur_leggings": {
+      "textures": [
+        "textures/items/pamobile/cb_yeti_fur_leggings"
+      ]
+    },
+    "cb_yeti_fur_boots": {
+      "textures": [
+        "textures/items/pamobile/cb_yeti_fur_boots"
+      ]
+    },
+    "cb_pheonix_wings": {
+      "textures": [
+        "textures/items/pamobile/cb_pheonix_wings"
+      ]
+    },
+    "cb_yeti_fur_chestplate": {
+      "textures": [
+        "textures/items/pamobile/cb_yeti_fur_chestplate"
+      ]
+    },
+    "cb:kitsune_fur": {
+      "textures": "textures/items/pamobile/cb_kitsune_fur"
+    },
+    "cb_krakens_fang": {
+      "textures": "textures/items/pamobile/cb_krakens_fang"
+    },
+    "cb_pheonix_blade": {
+      "textures": "textures/items/pamobile/cb_pheonix_blade"
+    },
+    "cb_kitsune_claws": {
+      "textures": "textures/items/pamobile/cb_kitsune_claws"
+    },
+    "cb_crimson_viole": {
+      "textures": "textures/items/pamobile/cb_crimson_viole"
+    },
+    "cb_pheonix_blade_skin_dvsb": {
+      "textures": "textures/items/pamobile/cb_pheonix_blade_skin_dvsb"
+    },
+    "cb_xp_viole_6": {
+      "textures": "textures/items/pamobile/cb_xp_viole_6"
+    },
+    "cb_kitsune_tails": {
+      "textures": [
+        "textures/items/pamobile/cb_kitsune_tails"
+      ]
+    },
+    "cb_wooden_bat": {
+      "textures": "textures/items/pamobile/cb_wooden_bat"
+    },
+    "cb:raw_goblin_meat": {
+      "textures": "textures/items/pamobile/cb_raw_goblin_meat"
+    },
+    "cb:cooked_goblin_meat": {
+      "textures": "textures/items/pamobile/cb_cooked_goblin_meat"
+    },
+    "cb_iron_spiked_bat": {
+      "textures": "textures/items/pamobile/cb_iron_spiked_bat"
+    },
+    "cb:centaur_hooves": {
+      "textures": "textures/items/pamobile/cb_centaur_hooves"
+    },
+    "cb:raw_orc_meat": {
+      "textures": "textures/items/pamobile/cb_raw_orc_meat"
+    },
+    "cb:cooked_orc_meat": {
+      "textures": "textures/items/pamobile/cb_cooked_orc_meat"
+    },
+    "cb_centaur_axe": {
+      "textures": "textures/items/pamobile/cb_centaur_axe"
+    },
+    "cb_iron_hooved_boots": {
+      "textures": [
+        "textures/items/pamobile/cb_iron_hooved_boots"
+      ]
+    },
+"cb_hooved_copper_boots": {
+      "textures": [
+        "textures/items/pamobile/cb_hooved_copper_boots"
+      ]
+    },
+"cb_hooved_steel_boots": {
+      "textures": [
+        "textures/items/pamobile/cb_steel_boots"
+      ]
+    },
+"cb_hooved_adamantium_boots": {
+      "textures": [
+        "textures/items/pamobile/cb_adamantium_boots"
+      ]
+    },
+"cb_hooved_silver_boots": {
+      "textures": [
+        "textures/items/pamobile/cb_silver_boots"
+      ]
+    },
+"cb_hooved_labrysium_boots": {
+      "textures": [
+        "textures/items/pamobile/cb_labrysium_boots"
+      ]
+    },
+    "cb_hooved_yeti_fur_boots": {
+      "textures": [
+        "textures/items/pamobile/cb_hooved_yeti_fur_boots"
+      ]
+    },
+    "cb_hooved_kraken_scales_boots": {
+      "textures": [
+        "textures/items/pamobile/cb_hooved_kraken_scales_boots"
+      ]
+    },
+    "cb_hooved_chainmai_boots": {
+      "textures": [
+        "textures/items/pamobile/cb_hooved_chainmai_boots"
+      ]
+    },
+    "cb_hooved_gold_boots": {
+      "textures": [
+        "textures/items/pamobile/cb_hooved_gold_boots"
+      ]
+    },
+    "cb_hooved_diamond_boots": {
+      "textures": [
+        "textures/items/pamobile/cb_hooved_diamond_boots"
+      ]
+    },
+    "cb_hooved_netherite_boots": {
+      "textures": [
+        "textures/items/pamobile/cb_hooved_netherite_boots"
+      ]
+    },
+    "cb_hooved_leather_boots": {
+      "textures": [
+        "textures/items/pamobile/cb_hooved_leather_boots"
+      ]
+    },
+    "cb:horned_beer": {
+      "textures": "textures/items/pamobile/cb_horned_beer"
+    },
+    "cb_vampiric_viole": {
+      "textures": "textures/items/pamobile/cb_vampiric_viole"
+    },
+    "cb:cooked_minotaur_meat": {
+      "textures": "textures/items/pamobile/cb_cooked_minotaur_meat"
+    },
+    "cb:raw_minotaur_meat": {
+      "textures": "textures/items/pamobile/cb_raw_minotaur_meat"
+    },
+    "cb:minotaur_horn": {
+      "textures": "textures/items/pamobile/cb_minotaur_horn"
+    },
+    "cb:vampire_blood": {
+      "textures": "textures/items/pamobile/cb_vampire_blood"
+    },
+    "cb:mutated_spiderweb": {
+      "textures": "textures/items/pamobile/cb_mutated_spiderweb"
+    },
+    "cb_toxic_viole": {
+      "textures": "textures/items/pamobile/cb_toxic_viole"
+    },
+    "cb:vampire_heart": {
+      "textures": "textures/items/pamobile/cb_vampire_heart"
+    },
+    "cb_vampiric_greatsword": {
+      "textures": "textures/items/pamobile/cb_vampiric_greatsword"
+    },
+    "cb_toxic_spear": {
+      "textures": "textures/items/pamobile/cb_toxic_spear"
+    },
+	"cb:kits_book": {
+      "textures": "textures/items/pamobile/cb_kits_book"
+    },
+    "cb:quest_book": {
+      "textures": "textures/items/pamobile/cb_quest_book"
+    },
+    "cb_webshooter": {
+      "textures": "textures/items/pamobile/cb_webshooter"
+    },
+    "cb_archanoweave": {
+      "textures": "textures/items/pamobile/cb_archanoweave"
+    },
+    "cb:krakens_serpent_spawn_egg": {
+      "textures": "textures/items/pamobile/cb_krakens_serpent_spawn_egg"
+    },
+    "cb_dark_staff_1": {
+      "textures": "textures/items/pamobile/cb_dark_staff_1"
+    },
+    "cb_frost_staff": {
+      "textures": "textures/items/pamobile/cb_frost_staff"
+    },
+    "cb_staff_of_crimson_flames": {
+      "textures": "textures/items/pamobile/cb_staff_of_crimson_flames"
+    },
+    "cb_dark_staff_2": {
+      "textures": "textures/items/pamobile/cb_dark_staff_2"
+    },
+    "cb_staff_of_azure_flames": {
+      "textures": "textures/items/pamobile/cb_staff_of_azure_flames"
+    },
+    "cb_kraken_poison_shooter": {
+      "textures": "textures/items/pamobile/cb_kraken_poison_shooter"
+    },
+    "cb_steel_ingot": {
+      "textures": "textures/items/pamobile/cb_steel_ingot"
+    },
+    "cb_silver_ingot": {
+      "textures": "textures/items/pamobile/cb_silver_ingot"
+    },
+    "cb_labrysium_ingot": {
+      "textures": "textures/items/pamobile/cb_labrysium_ingot"
+    },
+    "cb_adamantium_ingot": {
+      "textures": "textures/items/pamobile/cb_adamantium_ingot"
+    }
+  }
+}
