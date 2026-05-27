@@ -1,8 +1,11 @@
 {
-  "format_version": "1.8.0",
+  "format_version": "1.10.0",
   "minecraft:attachable": {
     "description": {
-      "identifier": "cb:chestplate_of_heavens",
+      "identifier": "cb:chestplate_of_heavens.player",
+      "item": {
+        "cb:chestplate_of_heavens": "query.owner_identifier == 'minecraft:player'"
+      },
       "materials": {
         "default": "armor",
         "enchanted": "armor_enchanted"

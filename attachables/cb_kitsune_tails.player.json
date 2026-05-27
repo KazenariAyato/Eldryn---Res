@@ -1,21 +1,24 @@
 {
-  "format_version": "1.8.0",
+  "format_version": "1.10.0",
   "minecraft:attachable": {
     "description": {
-      "identifier": "cb:chestplate_of_heavens",
+      "identifier": "cb:kitsune_tails.player",
+      "item": {
+        "cb:kitsune_tails": "query.owner_identifier == 'minecraft:player'"
+      },
       "materials": {
         "default": "armor",
         "enchanted": "armor_enchanted"
       },
       "textures": {
-        "default": "textures/entity/pamobile/cb_chestplate_of_heavens",
+        "default": "textures/entity/pamobile/cb_kitsune_tails",
         "enchanted": "textures/misc/enchanted_item_glint"
       },
       "geometry": {
-        "default": "geometry.cb_chestplate_of_heavens"
+        "default": "geometry.cb_kitsune_tails"
       },
       "scripts": {
-        "parent_setup": "variable.chest_layer_visible = 0.0;"
+        "parent_setup": "variable.leg_layer_visible = 0.0;"
       },
       "render_controllers": [
         "controller.render.armor"
