@@ -1,0 +1,9 @@
+{
+  "format_version": "1.10.0",
+  "particle_effect": {
+    "cb:dms1": {},
+    "cb:dms4": {},
+    "cb:archane_web": {},
+    "cb:archane_poison": {}
+  }
+}
