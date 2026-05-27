@@ -1,0 +1,25 @@
+{
+  "format_version": "1.14.0",
+  "sound_definitions": {
+
+    "introduction": {
+      "category": "music",
+      "sounds": [
+        {
+          "name": "sounds/introduction",
+          "stream": false
+        }
+      ]
+    },
+
+    "haggstrom": {
+      "category": "music",
+      "sounds": [
+        {
+          "name": "sounds/haggstrom",
+          "stream": false
+        }
+      ]
+    }
+  }
+}

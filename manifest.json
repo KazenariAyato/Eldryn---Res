@@ -1,0 +1,40 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "§gAn Mythology/Fantasy Addon Made By @AyatoDayoh",
+    "name": "§cEldryn",
+    "uuid": "1bd621b7-f72a-4bd3-a5a6-3e0db411fe7b",
+    "version": [
+      0,
+      0,
+      1
+    ],
+    "min_engine_version": [
+      1,
+      17,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "§gAn Mythology/Fantasy Addon Made By @AyatoDayoh",
+      "type": "resources",
+      "uuid": "95b89bc4-37f9-408f-b938-bd6a004cdf1b",
+      "version": [
+        0,
+        0,
+        1
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "75df8bbb-3a59-46d9-bab4-e8b9391a72cf",
+      "version": [
+        0,
+        0,
+        1
+      ]
+    }
+  ]
+}
