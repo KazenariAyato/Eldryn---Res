@@ -1,0 +1,45 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.cb_butterfly": {
+      "geometry": "Geometry.default",
+
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+
+      "textures": [
+        "Array.skins[query.variant]"
+      ],
+
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.butterfly_0",
+            "Texture.butterfly_1",
+            "Texture.butterfly_2",
+            "Texture.butterfly_3",
+            "Texture.butterfly_4",
+            "Texture.butterfly_5",
+            "Texture.butterfly_6",
+            "Texture.butterfly_7",
+            "Texture.butterfly_8",
+            "Texture.butterfly_9",
+            "Texture.butterfly_10",
+            "Texture.butterfly_11",
+            "Texture.butterfly_12",
+            "Texture.butterfly_13",
+            "Texture.butterfly_14",
+            "Texture.butterfly_15",
+            "Texture.butterfly_16",
+            "Texture.butterfly_17",
+            "Texture.butterfly_18",
+            "Texture.butterfly_19"
+          ]
+        }
+      }
+    }
+  }
+}

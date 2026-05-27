@@ -1,11 +1,11 @@
 {
   "format_version": "1.8.0",
   "render_controllers": {
-    "controller.render.cb_dark_staff_1": {
+    "controller.render.cb_staff_of_crimson_flames": {
       "textures": [
-        "Texture.cb_dark_staff_1_3d"
+        "Texture.cb_staff_of_crimson_flames_3d"
       ],
-      "geometry": "Geometry.cb_dark_staff_1",
+      "geometry": "Geometry.cb_staff_of_crimson_flames",
       "materials": [
         {
           "*": "Material.default"
