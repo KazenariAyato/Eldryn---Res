@@ -1,0 +1,100 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.archane": {
+      "initial_state": "idle",
+      "states": {
+        "idle": {
+          "animations": [
+            "idle"
+          ],
+          "transitions": [
+            {
+              "walk": "query.modified_move_speed > 0.1 && query.property('cb:attack_state') == 0"
+            },
+            {
+              "attack": "query.property('cb:attack_state') == 1"
+            },
+            {
+              "attack2": "query.property('cb:attack_state') == 2"
+            },
+            {
+              "attack3": "query.property('cb:attack_state') == 3"
+            }
+          ]
+        },
+        "walk": {
+          "animations": [
+            "walk"
+          ],
+          "transitions": [
+            {
+              "idle": "query.modified_move_speed <= 0.1 && query.property('cb:attack_state') == 0"
+            },
+            {
+              "run": "query.modified_move_speed > 0.5 && query.property('cb:attack_state') == 0"
+            },
+            {
+              "attack": "query.property('cb:attack_state') == 1"
+            },
+            {
+              "attack2": "query.property('cb:attack_state') == 2"
+            },
+            {
+              "attack3": "query.property('cb:attack_state') == 3"
+            }
+          ]
+        },
+        "run": {
+          "animations": [
+            "run"
+          ],
+          "transitions": [
+            {
+              "walk": "query.modified_move_speed <= 0.5 && query.property('cb:attack_state') == 0"
+            },
+            {
+              "attack": "query.property('cb:attack_state') == 1"
+            },
+            {
+              "attack2": "query.property('cb:attack_state') == 2"
+            },
+            {
+              "attack3": "query.property('cb:attack_state') == 3"
+            }
+          ]
+        },
+        "attack": {
+          "animations": [
+            "attack"
+          ],
+          "transitions": [
+            {
+              "idle": "query.any_animation_finished"
+            }
+          ]
+        },
+        "attack2": {
+          "animations": [
+            "attack2"
+          ],
+          "transitions": [
+            {
+              "idle": "query.any_animation_finished"
+            }
+          ]
+        },
+        "attack3": {
+          "animations": [
+            "attack3"
+          ],
+          "transitions": [
+            {
+              "idle": "query.any_animation_finished"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

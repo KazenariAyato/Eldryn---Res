@@ -1,0 +1,141 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.wolf.move": {
+            "initial_state": "idle",
+            "states": {
+                "idle": {
+                    "animations": [
+                        "wolf_look_at",
+                        "wolf_setup"
+                    ],
+                    "transitions": [
+                        {
+                            "walk": "query.modified_move_speed > 0.01"
+                        },
+                        {
+                            "sitting": "query.is_sitting"
+                        },
+                        {
+                            "angry": "query.is_angry"
+                        },
+                        {
+                            "shaking": "query.is_shaking_wetness"
+                        },
+                        {
+                            "rot": "!query.is_angry && !query.has_target && query.is_interested && query.modified_move_speed <= 0.01"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "walk": {
+                    "animations": [
+                        "wolf_leg_default"
+                    ],
+                    "transitions": [
+                        {
+                            "idle": "query.modified_move_speed <= 0.01 && !query.is_sitting"
+                        },
+                        {
+                            "sitting": "query.is_sitting"
+                        },
+                        {
+                            "angry": "query.is_angry"
+                        },
+                        {
+                            "shaking": "query.is_shaking_wetness"
+                        },
+                        {
+                            "rot": "!query.is_angry && !query.has_target && query.is_interested && query.modified_move_speed <= 0.01"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "sitting": {
+                    "animations": [
+                        "wolf_look_at",
+                        "wolf_sitting"
+                    ],
+                    "transitions": [
+                        {
+                            "idle": "!query.is_sitting"
+                        },
+                        {
+                            "walk": "!query.is_sitting"
+                        },
+                        {
+                            "angry": "query.is_angry"
+                        },
+                        {
+                            "rot": "query.is_interested"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "angry": {
+                    "animations": [
+                        "wolf_look_at",
+                        "wolf_leg_default",
+                        "wolf_angry"
+                    ],
+                    "transitions": [
+                        {
+                            "idle": "!query.is_angry && query.modified_move_speed <= 0.01"
+                        },
+                        {
+                            "walk": "!query.is_angry && query.modified_move_speed > 0.01"
+                        },
+                        {
+                            "sitting": "query.is_sitting"
+                        },
+                        {
+                            "rot": "!query.is_angry && !query.has_target"
+                        }
+                    ],
+                    "blend_transition": 2
+                },
+                "shaking": {
+                    "animations": [
+                        "wolf_shaking"
+                    ],
+                    "transitions": [
+                        {
+                            "idle": "!query.is_shaking_wetness && query.modified_move_speed <= 0.01"
+                        },
+                        {
+                            "walk": "!query.is_shaking_wetness && query.modified_move_speed > 0.01"
+                        },
+                        {
+                            "sitting": "query.is_sitting"
+                        },
+                        {
+                            "angry": "query.is_angry"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "rot": {
+                    "animations": [
+                        "wolf_look_at",
+                        "wolf_head_rot_z"
+                    ],
+                    "transitions": [
+                        {
+                            "idle": "!query.is_interested || query.modified_move_speed > 0.01"
+                        },
+                        {
+                            "walk": "query.modified_move_speed > 0.01 && !query.is_interested"
+                        },
+                        {
+                            "sitting": "query.is_sitting"
+                        },
+                        {
+                            "angry": "query.is_angry"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                }
+            }
+        }
+    }
+}

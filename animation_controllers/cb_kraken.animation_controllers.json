@@ -1,0 +1,52 @@
+{
+  "format_version": "1.19.0",
+  "animation_controllers": {
+    "controller.animation.cb_kraken.move": {
+      "initial_state": "idle",
+      "states": {
+        "idle": {
+          "animations": [
+            "idle"
+          ],
+          "transitions": [
+            {
+              "swim": "query.modified_move_speed >= 0.1"
+            },
+            {
+              "attack": "query.has_target && variable.attack_time > 0.1"
+            }
+          ],
+          "blend_transition": 0.1
+        },
+        "swim": {
+          "animations": [
+            "swim"
+          ],
+          "transitions": [
+            {
+              "idle": "query.modified_move_speed <= 0.1"
+            },
+            {
+              "attack": "query.has_target && variable.attack_time > 0.1"
+            }
+          ],
+          "blend_transition": 0.1
+        },
+        "attack": {
+          "animations": [
+            "attack"
+          ],
+          "transitions": [
+            {
+              "idle": "!query.has_target && variable.attack_time <= 0.1"
+            },
+            {
+              "swim": "query.modified_move_speed >= 0.1"
+            }
+          ],
+          "blend_transition": 2.0
+        }
+      }
+    }
+  }
+}

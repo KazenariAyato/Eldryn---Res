@@ -1,0 +1,110 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.cb_dark_elf.main": {
+      "initial_state": "idle",
+
+      "states": {
+
+        "idle": {
+          "animations": [
+            "idle"
+          ],
+          "transitions": [
+            {
+              "attacking": "v.attacking"
+            },
+            {
+              "swim": "query.is_swimming"
+            },
+            {
+              "run": "query.modified_move_speed > 0.85"
+            },
+            {
+              "walk": "query.modified_move_speed > 0.1"
+            }
+          ]
+        },
+
+        "walk": {
+          "animations": [
+            "walk"
+          ],
+          "transitions": [
+            {
+              "attacking": "v.attacking"
+            },
+            {
+              "swim": "query.is_swimming"
+            },
+            {
+              "run": "query.modified_move_speed > 0.85"
+            },
+            {
+              "idle": "query.modified_move_speed <= 0.1"
+            }
+          ]
+        },
+
+        "run": {
+          "animations": [
+            "run"
+          ],
+          "transitions": [
+            {
+              "attacking": "v.attacking"
+            },
+            {
+              "swim": "query.is_swimming"
+            },
+            {
+              "walk": "query.modified_move_speed <= 0.85 && query.modified_move_speed > 0.1"
+            },
+            {
+              "idle": "query.modified_move_speed <= 0.1"
+            }
+          ]
+        },
+
+        "swim": {
+          "animations": [
+            "swim"
+          ],
+          "transitions": [
+            {
+              "attacking": "v.attacking"
+            },
+            {
+              "idle": "!query.is_swimming && query.modified_move_speed <= 0.1"
+            },
+            {
+              "walk": "!query.is_swimming && query.modified_move_speed > 0.1"
+            }
+          ]
+        },
+
+        "attacking": {
+          "blend_transition": 0.08,
+          "animations": [
+            "attack_knight"
+          ],
+          "transitions": [
+            {
+              "swim": "!v.attacking && query.is_swimming"
+            },
+            {
+              "run": "!v.attacking && query.modified_move_speed > 0.85"
+            },
+            {
+              "walk": "!v.attacking && query.modified_move_speed > 0.1"
+            },
+            {
+              "idle": "!v.attacking"
+            }
+          ]
+        }
+
+      }
+    }
+  }
+}
