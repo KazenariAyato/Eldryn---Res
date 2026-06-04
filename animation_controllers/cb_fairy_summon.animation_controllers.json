@@ -1,103 +1,39 @@
 {
-  "format_version": "1.19.0",
+  "format_version": "1.10.0",
   "animation_controllers": {
-    "controller.animation.cb_fairy_summon.general": {
-      "initial_state": "idling",
+    "controller.animation.cb_duck.general": {
+      "initial_state": "idle",
       "states": {
-        "idling": {
-          "animations": [
-            "idle"
-          ],
+        "idle": {
+          "animations": ["idle"],
           "transitions": [
-            {
-              "flying": "query.modified_move_speed > 0.2"
-            }
-          ],
-          "blend_transition": 0.2
-        },
-        "flying": {
-          "animations": [
-            "fly"
-          ],
-          "transitions": [
-            {
-              "idling": "query.modified_move_speed < 0.2"
-            }
-          ],
-          "blend_transition": 0.2
-        }
-      }
-    },
-    "controller.animation.cb_fairy_summon.look_at_target": {
-      "states": {
-        "default": {
-          "transitions": [
-            {
-              "looking_at_target": "!query.is_dancing"
-            }
+            { "swim": "query.is_in_water || query.is_swimming" },
+            { "walk": "query.modified_move_speed > 0.01" }
           ]
         },
-        "looking_at_target": {
-          "animations": [
-            "look_at_target_default"
-          ],
+
+        "walk": {
+          "animations": ["walk"],
           "transitions": [
-            {
-              "default": "query.is_dancing"
-            }
+            { "swim": "query.is_in_water || query.is_swimming" },
+            { "run": "query.modified_move_speed > 0.15" },
+            { "idle": "query.modified_move_speed <= 0.01" }
           ]
-        }
-      }
-    },
-    "controller.animation.cb_fairy_summon.holding": {
-      "initial_state": "holding",
-      "states": {
-        "holding": {
-          "animations": [
-            {
-              "hold_item": "variable.is_holding_left || variable.is_holding_right"
-            }
-          ],
-          "transitions": [
-            {
-              "fly_holding": "query.modified_move_speed > 0.2"
-            }
-          ],
-          "blend_transition": 0.2
         },
-        "fly_holding": {
-          "animations": [
-            {
-              "hold_item_fly": "variable.is_holding_left || variable.is_holding_right"
-            }
-          ],
+
+        "run": {
+          "animations": ["run"],
           "transitions": [
-            {
-              "holding": "query.modified_move_speed < 0.2"
-            }
-          ],
-          "blend_transition": 0.2
-        }
-      }
-    },
-    "controller.animation.cb_fairy_summon.dancing": {
-      "states": {
-        "default": {
-          "transitions": [
-            {
-              "dancing": "query.is_dancing"
-            }
-          ],
-          "blend_transition": 0.2
+            { "swim": "query.is_in_water || query.is_swimming" },
+            { "walk": "query.modified_move_speed <= 0.15" },
+            { "idle": "query.modified_move_speed <= 0.01" }
+          ]
         },
-        "dancing": {
-          "animations": [
-            "dance"
-          ],
+
+        "swim": {
+          "animations": ["swim"],
           "transitions": [
-            {
-              "default": "!query.is_dancing"
-            }
+            { "idle": "!query.is_in_water && !query.is_swimming" }
           ]
         }
       }

@@ -1,28 +1,7 @@
 {
   "format_version": "1.19.0",
   "animation_controllers": {
-    "controller.animation.cb_frost_elf_knight.attack": {
-      "states": {
-        "attacking": {
-          "animations": [
-            "attack.rotations"
-          ],
-          "transitions": [
-            {
-              "default": "variable.attack_time < 0.0"
-            }
-          ]
-        },
-        "default": {
-          "transitions": [
-            {
-              "attacking": "variable.attack_time >= 0.0"
-            }
-          ]
-        }
-      }
-    },
-    "controller.animation.cb_frost_elf_knight.bow_and_arrow": {
+    "controller.animation.cb_frost_elf_archer.bow_and_arrow": {
       "states": {
         "bow_and_arrow": {
           "animations": [
@@ -43,49 +22,37 @@
         }
       }
     },
-    "controller.animation.cb_frost_elf_knight.brandish_spear": {
+    "controller.animation.cb_frost_elf_archer.use_item_progress": {
       "states": {
-        "brandish_spear": {
-          "animations": [
-            "brandish_spear"
-          ],
-          "transitions": [
-            {
-              "default": "!variable.is_brandishing_spear"
-            }
-          ]
-        },
         "default": {
           "transitions": [
             {
-              "brandish_spear": "variable.is_brandishing_spear"
+              "use_item_progress": "( variable.use_item_interval_progress > 0.0 ) || ( variable.use_item_startup_progress > 0.0 )"
+            }
+          ]
+        },
+        "use_item_progress": {
+          "animations": [
+            "use_item_progress"
+          ],
+          "transitions": [
+            {
+              "default": "( variable.use_item_interval_progress <= 0.0 ) && ( variable.use_item_startup_progress <= 0.0 )"
             }
           ]
         }
       }
     },
-    "controller.animation.cb_frost_elf_knight.charging": {
+    "controller.animation.cb_frost_elf_archer.bob": {
       "states": {
-        "charging": {
-          "animations": [
-            "charging"
-          ],
-          "transitions": [
-            {
-              "default": "!query.is_charging"
-            }
-          ]
-        },
         "default": {
-          "transitions": [
-            {
-              "charging": "query.is_charging"
-            }
+          "animations": [
+            "bob"
           ]
         }
       }
     },
-    "controller.animation.cb_frost_elf_knight.damage_nearby_mobs": {
+    "controller.animation.cb_frost_elf_archer.damage_nearby_mobs": {
       "states": {
         "damage_nearby_mobs": {
           "animations": [
@@ -106,7 +73,91 @@
         }
       }
     },
-    "controller.animation.cb_frost_elf_knight.holding": {
+    "controller.animation.cb_frost_elf_archer.sneaking": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "sneaking": "query.is_sneaking"
+            }
+          ]
+        },
+        "sneaking": {
+          "animations": [
+            "sneaking"
+          ],
+          "transitions": [
+            {
+              "default": "!query.is_sneaking"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cb_frost_elf_archer.attack": {
+      "states": {
+        "attacking": {
+          "animations": [
+            "attack.rotations"
+          ],
+          "transitions": [
+            {
+              "default": "variable.attack_time < 0.0"
+            }
+          ]
+        },
+        "default": {
+          "transitions": [
+            {
+              "attacking": "variable.attack_time >= 0.0"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cb_frost_elf_archer.brandish_spear": {
+      "states": {
+        "brandish_spear": {
+          "animations": [
+            "brandish_spear"
+          ],
+          "transitions": [
+            {
+              "default": "!variable.is_brandishing_spear"
+            }
+          ]
+        },
+        "default": {
+          "transitions": [
+            {
+              "brandish_spear": "variable.is_brandishing_spear"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cb_frost_elf_archer.charging": {
+      "states": {
+        "charging": {
+          "animations": [
+            "charging"
+          ],
+          "transitions": [
+            {
+              "default": "!query.is_charging"
+            }
+          ]
+        },
+        "default": {
+          "transitions": [
+            {
+              "charging": "query.is_charging"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.cb_frost_elf_archer.holding": {
       "states": {
         "default": {
           "animations": [
@@ -115,7 +166,7 @@
         }
       }
     },
-    "controller.animation.cb_frost_elf_knight.look_at_target": {
+    "controller.animation.cb_frost_elf_archer.look_at_target": {
       "states": {
         "default": {
           "animations": [
@@ -158,7 +209,7 @@
         }
       }
     },
-    "controller.animation.cb_frost_elf_knight.move": {
+    "controller.animation.cb_frost_elf_archer.move": {
       "states": {
         "default": {
           "animations": [
@@ -167,7 +218,7 @@
         }
       }
     },
-    "controller.animation.cb_frost_elf_knight.riding": {
+    "controller.animation.cb_frost_elf_archer.riding": {
       "states": {
         "default": {
           "transitions": [
@@ -189,70 +240,28 @@
         }
       }
     },
-    "controller.animation.cb_frost_elf_knight.sneaking": {
+    "controller.animation.cb_frost_elf_archer.attack_1": {
       "states": {
         "default": {
           "transitions": [
             {
-              "sneaking": "query.is_sneaking"
+              "attack": "query.has_target && !query.facing_target_to_range_attack"
             }
           ]
         },
-        "sneaking": {
+        "attack": {
           "animations": [
-            "sneaking"
+            "skeleton_attack"
           ],
           "transitions": [
             {
-              "default": "!query.is_sneaking"
+              "default": "!query.has_target || query.facing_target_to_range_attack"
             }
           ]
         }
       }
     },
-    "controller.animation.cb_frost_elf_knight.use_item_progress": {
-      "states": {
-        "default": {
-          "transitions": [
-            {
-              "use_item_progress": "( variable.use_item_interval_progress > 0.0 ) || ( variable.use_item_startup_progress > 0.0 )"
-            }
-          ]
-        },
-        "use_item_progress": {
-          "animations": [
-            "use_item_progress"
-          ],
-          "transitions": [
-            {
-              "default": "( variable.use_item_interval_progress <= 0.0 ) && ( variable.use_item_startup_progress <= 0.0 )"
-            }
-          ]
-        }
-      }
-    },
-    "controller.animation.cb_frost_elf_knight.attack_1": {
-      "states": {
-        "chase_target": {
-          "animations": [
-            "wither_skeleton_attack"
-          ],
-          "transitions": [
-            {
-              "default": "!variable.has_target"
-            }
-          ]
-        },
-        "default": {
-          "transitions": [
-            {
-              "chase_target": "variable.has_target"
-            }
-          ]
-        }
-      }
-    },
-    "controller.animation.cb_frost_elf_knight.swimming": {
+    "controller.animation.skeleton.swimming": {
       "states": {
         "default": {
           "transitions": [

@@ -1,56 +1,30 @@
 {
   "format_version": "1.19.0",
   "animation_controllers": {
-    "controller.animation.cb_krakens_serpent.move": {
+    "controller.animation.cb_kraken.move": {
       "initial_state": "idle",
       "states": {
         "idle": {
           "animations": [
-            "look_at",
             "idle"
           ],
           "transitions": [
             {
-              "move": "query.modified_move_speed > 0.01"
-            },
-            {
-              "sit": "!query.is_in_water && query.modified_move_speed <= 0.01 && query.is_on_ground"
+              "swim": "query.modified_move_speed >= 0.1"
             },
             {
               "attack": "query.has_target && variable.attack_time > 0.1"
             }
           ],
-          "blend_transition": 0.2
+          "blend_transition": 0.1
         },
-        "move": {
+        "swim": {
           "animations": [
-            "swimming",
-            "look_at"
+            "swim"
           ],
           "transitions": [
             {
-              "idle": "query.modified_move_speed <= 0.01 && query.is_in_water"
-            },
-            {
-              "sit": "!query.is_in_water && query.modified_move_speed <= 0.01"
-            },
-            {
-              "attack": "query.has_target && variable.attack_time > 0.1"
-            }
-          ],
-          "blend_transition": 0.2
-        },
-        "sit": {
-          "animations": [
-            "sitting",
-            "look_at"
-          ],
-          "transitions": [
-            {
-              "idle": "query.modified_move_speed <= 0.01 && query.is_in_water"
-            },
-            {
-              "move": "query.modified_move_speed > 0.01"
+              "idle": "query.modified_move_speed <= 0.1"
             },
             {
               "attack": "query.has_target && variable.attack_time > 0.1"
@@ -60,18 +34,17 @@
         },
         "attack": {
           "animations": [
-            "look_at",
-            "melee_attack"
+            "attack"
           ],
           "transitions": [
             {
               "idle": "!query.has_target && variable.attack_time <= 0.1"
             },
             {
-              "move": "query.modified_move_speed > 0.01"
+              "swim": "query.modified_move_speed >= 0.1"
             }
           ],
-          "blend_transition": 0.4
+          "blend_transition": 2.0
         }
       }
     }

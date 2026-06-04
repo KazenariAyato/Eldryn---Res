@@ -1,97 +1,133 @@
 {
-  "format_version": "1.10.0",
+  "format_version": "1.19.0",
   "animation_controllers": {
-    "controller.animation.archane": {
-      "initial_state": "idle",
+    "controller.animation.humanoid.look_at_target": {
       "states": {
-        "idle": {
+        "default": {
           "animations": [
-            "idle"
+            "look_at_target_default"
           ],
           "transitions": [
             {
-              "walk": "query.modified_move_speed > 0.1 && query.property('cb:attack_state') == 0"
+              "gliding": "query.is_gliding"
             },
             {
-              "attack": "query.property('cb:attack_state') == 1"
-            },
-            {
-              "attack2": "query.property('cb:attack_state') == 2"
-            },
-            {
-              "attack3": "query.property('cb:attack_state') == 3"
+              "swimming": "query.is_swimming || query.is_crawling"
             }
           ]
         },
-        "walk": {
+        "gliding": {
           "animations": [
-            "walk"
+            "look_at_target_gliding"
           ],
           "transitions": [
             {
-              "idle": "query.modified_move_speed <= 0.1 && query.property('cb:attack_state') == 0"
+              "swimming": "query.is_swimming || query.is_crawling"
             },
             {
-              "run": "query.modified_move_speed > 0.5 && query.property('cb:attack_state') == 0"
-            },
-            {
-              "attack": "query.property('cb:attack_state') == 1"
-            },
-            {
-              "attack2": "query.property('cb:attack_state') == 2"
-            },
-            {
-              "attack3": "query.property('cb:attack_state') == 3"
+              "default": "!query.is_gliding"
             }
           ]
         },
-        "run": {
+        "swimming": {
           "animations": [
-            "run"
+            "look_at_target_swimming"
           ],
           "transitions": [
             {
-              "walk": "query.modified_move_speed <= 0.5 && query.property('cb:attack_state') == 0"
+              "gliding": "query.is_gliding"
             },
             {
-              "attack": "query.property('cb:attack_state') == 1"
-            },
+              "default": "!query.is_swimming && !query.is_crawling"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.humanoid.riding": {
+      "states": {
+        "default": {
+          "transitions": [
             {
-              "attack2": "query.property('cb:attack_state') == 2"
-            },
-            {
-              "attack3": "query.property('cb:attack_state') == 3"
+              "riding": "query.is_riding"
             }
           ]
         },
-        "attack": {
+        "riding": {
           "animations": [
-            "attack"
+            "riding.arms",
+            "riding.legs"
           ],
           "transitions": [
             {
-              "idle": "query.any_animation_finished"
+              "default": "!query.is_riding"
             }
           ]
+        }
+      }
+    },
+    "controller.animation.vindicator.base": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "celebrating": "query.is_celebrating"
+            },
+            {
+              "hand_attack": "!query.is_item_equipped && variable.has_target && variable.attack_time >= 0.0"
+            },
+            {
+              "melee_attack": "query.is_item_equipped && variable.has_target && variable.attack_time >= 0.0"
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true
         },
-        "attack2": {
+        "hand_attack": {
           "animations": [
-            "attack2"
+            "vindicator_hand_attack"
           ],
           "transitions": [
             {
-              "idle": "query.any_animation_finished"
+              "default": "query.is_item_equipped || !variable.has_target || variable.attack_time < 0.0 || query.is_celebrating"
             }
-          ]
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true
         },
-        "attack3": {
+        "melee_attack": {
           "animations": [
-            "attack3"
+            "vindicator_attack"
           ],
           "transitions": [
             {
-              "idle": "query.any_animation_finished"
+              "default": "!query.is_item_equipped || !variable.has_target || variable.attack_time < 0.0 || query.is_celebrating"
             }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true
+        },
+        "celebrating": {
+          "animations": [
+            "celebrating"
+          ],
+          "transitions": [
+            {
+              "default": "!query.is_celebrating"
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true
+        }
+      }
+    },
+    "controller.animation.vindicator.base.v1.0": {
+      "states": {
+        "default": {
+          "animations": [
+            "vindicator_base",
+            "vindicator_attack",
+            "vindicator_walk"
           ]
         }
       }
