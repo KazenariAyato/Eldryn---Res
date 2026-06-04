@@ -3,6 +3,7 @@
   "particle_effect": {
     "cb:dms1": {},
     "cb:dms4": {},
+   "cb:light_particle": {},
     "cb:archane_web": {},
     "cb:archane_poison": {}
   }
