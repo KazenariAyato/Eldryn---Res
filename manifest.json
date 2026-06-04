@@ -1,40 +1,59 @@
 {
   "format_version": 2,
   "header": {
-    "description": "§gAn Mythology/Fantasy Addon Made By @AyatoDayoh",
     "name": "§cEldryn",
+    "description": "§gAn Mythology/Fantasy Addon Made By @AyatoDayoh",
     "uuid": "1bd621b7-f72a-4bd3-a5a6-3e0db411fe7b",
-    "version": [
-      0,
-      0,
-      1
-    ],
-    "min_engine_version": [
-      1,
-      17,
-      0
-    ]
+    "version": [0, 0, 1],
+    "min_engine_version": [1, 26, 0]
   },
+
   "modules": [
     {
       "description": "§gAn Mythology/Fantasy Addon Made By @AyatoDayoh",
       "type": "resources",
       "uuid": "95b89bc4-37f9-408f-b938-bd6a004cdf1b",
-      "version": [
-        0,
-        0,
-        1
-      ]
+      "version": [0, 0, 1]
     }
   ],
+
   "dependencies": [
     {
       "uuid": "75df8bbb-3a59-46d9-bab4-e8b9391a72cf",
-      "version": [
-        0,
-        0,
-        1
-      ]
+      "version": [0, 0, 1]
     }
-  ]
+  ],
+
+  "subpacks": [
+    {
+      "name": "§eUnbound§r | Realistic",
+      "folder_name": "unbound",
+      "memory_tier": 0,
+      "memory_performance_tier": 1
+    },
+    {
+      "name": "§dReimagined§r | Vanilla",
+      "folder_name": "reimagined",
+      "memory_tier": 0,
+      "memory_performance_tier": 1
+    }
+  ],
+
+  "settings": [
+    {
+      "type": "label",
+      "text": "||Pack info\n- Eldryn Mythology/Fantasy Addon with integrated vibrant visuals\n- Improved lighting, shadows, atmosphere, fog, colors & water\n- Better sun, moon & cloud visuals\n- Smooth key frame rendering\n\n||Subpacks info\n- §dReimagined§r | Vanilla minecraft style but better\n- §eUnbound§r | High quality and realistic\n\n||Colors info\n- §cRed§r | Performance impact\n- §eYellow §r| Normal\n- §aGreen §r| Smoother performance\n\n||Recommended Settings\n- Graphic mode | §cVibrant Visual§r\n- Gamma | §a100%§r\n- Shadow | §eUltra§r\n- Cloud | §aMedium§r\n- Fog | §aUltra§f\n- Reflection | §cHigh §r\n- Bloom | §e50§r-§e100%§r\n- Resolution | §c75% §ror §cNative§r\n\n||Recommended Hardware\n- Mobile | Adreno 640, Mali-G68, Mali-G77, Xclipse 530 or higher\n- IOS | A12 Bionic or higher\n- Windows | GPU with support for DirectX 12\n\n||§cNotes§r\n- Best settings for high-end devices\n- Low to mid-end devices may require reduced or disabled some features\n- Shader integration used with permission from Aoffy_aof\n\n§8Eldryn by AyatoDayoh"
+    }
+  ],
+
+  "capabilities": [
+    "pbr"
+  ],
+
+  "metadata": {
+    "authors": [
+      "AyatoDayoh",
+      "Aoffy_aof (Shader Integration)"
+    ]
+  }
 }
