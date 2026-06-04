@@ -1,21 +1,50 @@
 {
   "format_version": "1.8.0",
   "animations": {
-    "animation.cb_frost_elf_archer.attack": {
+    "animation.cb_frost_dagger.first_person": {
       "loop": true,
       "bones": {
-        "leftArm": {
+        "rightItem": {
           "rotation": [
-            "-68.75 * math.sin(variable.attack_time * 180.0) + 22.92 * (math.sin((1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0)) - 90.0 - this",
-            "5.73 - math.sin(variable.attack_time * 180.0) * 34.38 - this",
-            "-this"
+            0,
+            0,
+            180
+          ],
+          "position": [
+            -5,
+            35,
+            -5.5
           ]
         },
-        "rightArm": {
+        "right_arm": {
           "rotation": [
-            "-68.75 * math.sin(variable.attack_time * 180.0) + 22.92 * (math.sin((1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0)) - 90.0 - this",
-            "-5.73 + math.sin(variable.attack_time * 180.0) * 34.38 - this",
-            "-this"
+            -20,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "animation.cb_frost_dagger.third_person": {
+      "loop": true,
+      "bones": {
+        "rightItem": {
+          "rotation": [
+            90,
+            0,
+            90
+          ],
+          "position": [
+            0,
+            22,
+            5
+          ]
+        },
+        "right_arm": {
+          "rotation": [
+            -20,
+            0,
+            0
           ]
         }
       }

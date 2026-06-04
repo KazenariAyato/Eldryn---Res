@@ -1,53 +1,23 @@
 {
-  "format_version": "1.8.0",
-  "animations": {
-    "animation.cb_frost_dagger.first_person": {
-      "loop": true,
-      "bones": {
-        "rightItem": {
-          "rotation": [
-            0,
-            0,
-            180
-          ],
-          "position": [
-            -5,
-            35,
-            -5.5
-          ]
-        },
-        "right_arm": {
-          "rotation": [
-            -20,
-            0,
-            0
-          ]
-        }
-      }
-    },
-    "animation.cb_frost_dagger.third_person": {
-      "loop": true,
-      "bones": {
-        "rightItem": {
-          "rotation": [
-            90,
-            0,
-            90
-          ],
-          "position": [
-            0,
-            22,
-            5
-          ]
-        },
-        "right_arm": {
-          "rotation": [
-            -20,
-            0,
-            0
-          ]
-        }
-      }
-    }
-  }
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.cb_light_flight": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [90, 0, 0],
+					"position": [0, 0, 14]
+				},
+				"head": {
+					"rotation": [-64.7446, 2.4041, 0.5364]
+				},
+				"rightArm": {
+					"rotation": [0, 0, 10]
+				},
+				"leftArm": {
+					"rotation": [0, 0, -10]
+				}
+			}
+		}
+	}
 }
