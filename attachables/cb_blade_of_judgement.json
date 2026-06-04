@@ -1,0 +1,36 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "cb:blade_of_judgement",
+
+      "materials": {
+        "default": "entity_alphatest",
+        "emissive": "entity_emissive_alpha"
+      },
+
+      "textures": {
+        "default": "textures/entity/pamobile/cb_blade_of_judgement",
+        "emissive": "textures/entity/pamobile/cb_blade_of_judgement_emissive"
+      },
+
+      "geometry": {
+        "default": "geometry.cb_blade_of_judgement"
+      },
+
+      "animations": {
+        "hold": "animation.cb_blade_of_judgement.hold"
+      },
+
+      "scripts": {
+        "animate": [
+          "hold"
+        ]
+      },
+
+      "render_controllers": [
+        "controller.render.cb_blade_of_judgement"
+      ]
+    }
+  }
+}
