@@ -2,22 +2,22 @@
   "format_version": "1.21.120",
   "minecraft:client_biome": {
     "description": {
-      "identifier": "minecraft:basalt_deltas"
+      "identifier": "minecraft:soulsand_valley"
     },
     "components": {
       "minecraft:fog_appearance": {
-        "fog_identifier": "minecraft:fog_basalt_deltas"
+        "fog_identifier": "minecraft:fog_soulsand_valley"
       },
       "minecraft:water_appearance": {
-        "surface_color": "#3f76e4"
+        "surface_color": "#905957"
       },
       "minecraft:ambient_sounds": {
         "addition": {
-          "asset": "ambient.basalt_deltas.additions",
+          "asset": "ambient.soulsand_valley.additions",
           "chance": 0.0111
         },
-        "loop": "ambient.basalt_deltas.loop",
-        "mood": "ambient.basalt_deltas.mood",
+        "loop": "ambient.soulsand_valley.loop",
+        "mood": "ambient.soulsand_valley.mood",
         "underwater_addition": {
           "asset": "ambient.underwater.additions",
           "chance": 0.01
@@ -25,7 +25,7 @@
         "underwater_loop": "ambient.underwater.loop"
       },
       "minecraft:atmosphere_identifier": {
-        "atmosphere_identifier": "minecraft:basalt_deltas_atmospherics"
+        "atmosphere_identifier": "minecraft:soulsand_valley_atmospherics"
       },
       "minecraft:color_grading_identifier": {
         "color_grading_identifier": "minecraft:default_color_grading"
@@ -37,10 +37,10 @@
         "water_identifier": "avp:default_water"
       },
       "minecraft:precipitation": {
-        "white_ash": 2.0
+        "ash": 0.05
       },
       "minecraft:biome_music": {
-        "music_definition": "basalt_deltas"
+        "music_definition": "soulsand_valley"
       }
     }
   }
