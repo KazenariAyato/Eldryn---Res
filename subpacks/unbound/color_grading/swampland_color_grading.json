@@ -1,0 +1,42 @@
+{
+	"format_version": "1.21.90",
+	"minecraft:color_grading_settings": {
+		"description": {
+			"identifier": "avp:swampland_color_grading"
+		},
+		"color_grading": {
+			"midtones": {
+				"midtonesMax": 58,
+				"contrast": [1.12, 1.14, 1.16],
+				"saturation": [1.10, 1.12, 1.14],
+				"gain": [1.12, 1.14, 1.16],
+				"offset": [0.012, 0.01, -0.002],
+				"gamma": [2.22, 2.24, 2.26]
+			},
+			"highlights": {
+				"enabled": true,
+				"highlightsMin": 18,
+				"contrast": [1.16, 1.18, 1.20],
+				"saturation": [1.18, 1.20, 1.22],
+				"gain": [1.20, 1.24, 1.28],
+				"offset": [0.018, 0.012, -0.002],
+				"gamma": [2.20, 2.22, 2.24]
+			},
+			"shadows": {
+				"enabled": true,
+				"shadowsMax": 0.42,
+				"contrast": [1.06, 1.05, 1.04],
+				"saturation": [1.04, 1.03, 1.02],
+				"gain": [1.06, 1.05, 1.04],
+				"offset": [-0.002, 0.0, 0.002],
+				"gamma": [2.28, 2.26, 2.24]
+			}
+		},
+		"temperature": {
+			"enabled": true,
+			"temperature": 5025,
+			"type": "color_temperature"
+		},
+		"tone_mapping": "aces"
+	}
+}
