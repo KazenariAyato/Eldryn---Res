@@ -1,0 +1,64 @@
+{
+  "namespace": "cb_guildmenu",
+  "guild_menu_screen": {
+    "type": "screen",
+    "screen_content": {
+      "type": "panel",
+      "size": [ "100%", "100%" ],
+      "controls": [
+        {
+          "main_panel": {
+            "type": "panel",
+            "size": [ 256, 256 ],
+            "anchor_from": "center",
+            "anchor_to": "center",
+            "offset": [ 0, -20 ],
+            "controls": [
+              {
+                "background": {
+                  "type": "image",
+                  "texture": "textures/ui/cb_fm_guild_menu_hud",
+                  "size": [ 256, 256 ],
+                  "anchor_from": "center",
+                  "anchor_to": "center"
+                }
+              },
+              {
+                "back_btn": {
+                  "type": "button",
+                  "size": [ 46, 16 ],
+                  "anchor_from": "bottom_right",
+                  "anchor_to": "bottom_right",
+                  "offset": [ -12, -26 ],
+                  "layer": 2,
+                  "$pressed_button_name": "button.guild_menu_back",
+                  "controls": [
+                    { "default": { "type": "panel" } },
+                    { "hover": { "type": "panel" } },
+                    { "pressed": { "type": "panel" } }
+                  ]
+                }
+              },
+              {
+                "exit_btn": {
+                  "type": "button",
+                  "size": [ 46, 16 ],
+                  "anchor_from": "bottom_right",
+                  "anchor_to": "bottom_right",
+                  "offset": [ -12, -8 ],
+                  "layer": 2,
+                  "$pressed_button_name": "button.guild_menu_exit",
+                  "controls": [
+                    { "default": { "type": "panel" } },
+                    { "hover": { "type": "panel" } },
+                    { "pressed": { "type": "panel" } }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
