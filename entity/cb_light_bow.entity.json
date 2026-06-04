@@ -1,0 +1,36 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cb:light_bow",
+
+      "materials": {
+        "default": "entity_alphatest",
+        "emissive": "entity_emissive_alpha"
+      },
+
+      "textures": {
+        "default": "textures/entity/pamobile/cb_light_bow",
+        "emissive": "textures/entity/pamobile/cb_light_bow_e"
+      },
+
+      "geometry": {
+        "default": "geometry.cb_light_bow"
+      },
+
+      "animations": {
+        "light_bow": "animation.cb_light_magic_set.holy_rain_1"
+      },
+
+      "scripts": {
+        "animate": [
+          "light_bow"
+        ]
+      },
+
+      "render_controllers": [
+        "controller.render.cb_blade_of_judgement"
+      ]
+    }
+  }
+}

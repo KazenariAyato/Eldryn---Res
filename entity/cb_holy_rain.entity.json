@@ -1,0 +1,36 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cb:holy_rain",
+
+      "materials": {
+        "default": "entity_alphatest",
+        "emissive": "entity_emissive_alpha"
+      },
+
+      "textures": {
+        "default": "textures/entity/pamobile/cb_holy_rain",
+        "emissive": "textures/entity/pamobile/cb_holy_rain_e"
+      },
+
+      "geometry": {
+        "default": "geometry.cb_holy_rain"
+      },
+
+      "animations": {
+        "holy_rain": "animation.cb_light_magic_set.holy_rain_2"
+      },
+
+      "scripts": {
+        "animate": [
+          "holy_rain"
+        ]
+      },
+
+      "render_controllers": [
+        "controller.render.cb_blade_of_judgement"
+      ]
+    }
+  }
+}

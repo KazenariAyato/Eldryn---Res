@@ -1,0 +1,36 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cb:light_sword_rain",
+
+      "materials": {
+        "default": "entity_alphatest",
+        "emissive": "entity_emissive_alpha"
+      },
+
+      "textures": {
+        "default": "textures/entity/pamobile/cb_light_sword_rain",
+        "emissive": "textures/entity/pamobile/cb_light_sword_rain_e"
+      },
+
+      "geometry": {
+        "default": "geometry.cb_light_sword_rain"
+      },
+
+      "animations": {
+        "light_sword_rain": "animation.cb_light_magic_set.sword_rain"
+      },
+
+      "scripts": {
+        "animate": [
+          "light_sword_rain"
+        ]
+      },
+
+      "render_controllers": [
+        "controller.render.cb_blade_of_judgement"
+      ]
+    }
+  }
+}
